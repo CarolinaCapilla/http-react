@@ -1,1 +1,1 @@
-Simple react app to practice HTTP request using Axios and JSONPlaceholder to fake the data for our posts
+Simple react app to practice HTTP request using Axios and JSONplaceholder to fake the data for our posts

@@ -19,8 +19,9 @@ class Blog extends Component {
                 <Link
                   to={{
                     pathname: '/new-post',
-                    hash: '#submit',
-                    search: '?quick-submit-true',
+                    // pathname: this.props.match.url + '/new-post',
+                    // hash: '#submit',
+                    // search: '?quick-submit-true',
                   }}
                 >
                   New Post

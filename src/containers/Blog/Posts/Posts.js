@@ -30,6 +30,8 @@ class Posts extends Component {
   }
 
   postSelectedHandler = (id) => {
+    // this method will also work without then rendering the Link component wrapping Post
+    // this.props.history.push({ pathname: '/' + id });
     this.setState({ selectedPostId: id });
   };
   render() {
@@ -39,6 +41,7 @@ class Posts extends Component {
         return (
           <Link to={'/' + post.id} key={post.id}>
             <Post
+              // key={post.id}
               title={post.title}
               author={post.author}
               clicked={() => this.postSelectedHandler(post.id)}
